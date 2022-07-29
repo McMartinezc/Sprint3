@@ -42,7 +42,7 @@ public class Undo {
         	llista = new ArrayList<String>();
         }
         else{
-            System.out.println("No se pot crear l'objecte ");
+            System.out.println("No es pot crear l'objecte ");
         }
         
         return undo;
