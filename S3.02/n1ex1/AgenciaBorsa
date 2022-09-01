@@ -1,0 +1,7 @@
+
+public interface AgenciaBorsa { //Observers --> receptors de les actualitzacions de la borsa 
+	
+	//Metode 
+	void notificacio(String borsa);
+
+}
