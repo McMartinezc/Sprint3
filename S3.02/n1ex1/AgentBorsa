@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class AgentBorsa { //Observable -->emeten la notificació de l'actualizació de la borsa
+	
+	//Declaració de variables
+	private String borsa;
+	private ArrayList<AgenciaBorsa> llistaAgencies = new ArrayList<>(); //Creem un llistat de les agencies de borsa
+	
+	//Metode GETTERS i SETTERS
+	public ArrayList<AgenciaBorsa> getLlistaAgencies() {
+		return llistaAgencies;
+	}
+
+			
+	//Metode per afegir agencia al llistat
+	public void afegirAgencia(AgenciaBorsa agencia) {
+		this.llistaAgencies.add(agencia);
+	}
+	
+	//Metode que recorre el llistat d'agencies i notifica a les agencies l'actualizació
+	public void emiteActualizacio(String borsa) {
+		this.borsa = borsa;
+		for (AgenciaBorsa agencia: llistaAgencies ) {
+			agencia.notificacio(this.borsa); //Implementem la interface AgenciaBorsa
+		}
+	}
+
+}
