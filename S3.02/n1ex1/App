@@ -1,0 +1,22 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		//Instanciem Agent de Borsa que emetrà la notificiació --> Observable
+		AgentBorsa agent= new AgentBorsa();
+		
+		//Instanciem agencies que rebràn les notificacións --> Observers
+		Agencia1 agencia1 = new Agencia1();
+		Agencia2 agencia2 = new Agencia2(); 
+		
+		agent.afegirAgencia(agencia1);
+		agent.afegirAgencia(agencia2);
+		agent.emiteActualizacio("Última actualització: 1.00"); //S'actualiza la dada
+		
+		System.out.println(agent.getLlistaAgencies());
+		
+		
+	}
+
+}
