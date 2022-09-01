@@ -1,0 +1,29 @@
+
+public class Agencia1 implements AgenciaBorsa { //Exemple observable 1
+
+	//Declarem varaibles
+	private String borsa;
+	
+	
+	//Metodes GETTERS i SETTERS
+	public String getBorsa() {
+		return borsa;
+	}
+
+
+	public void setBorsa(String borsa) {
+		this.borsa = borsa;
+	}
+	
+	//Metode sobreescrit
+	public void notificacio(String borsa) {
+		this.setBorsa(borsa);
+	}
+
+
+	@Override
+	public String toString() {
+		return "Agencia1 [borsa=" + borsa + "]";
+	}
+	
+}
