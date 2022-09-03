@@ -1,0 +1,14 @@
+package n2ex1;
+
+public class CompteBancari implements FormaPagament{
+	
+	public CompteBancari() {
+		
+	}
+
+	@Override
+	public void pagament() {
+		System.out.println("Pagament desde compte bancari");
+		
+	}
+}
