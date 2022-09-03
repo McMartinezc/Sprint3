@@ -1,0 +1,15 @@
+package n2ex1;
+
+public class Paypal implements FormaPagament{
+
+	public Paypal() {
+		
+	}
+	
+	@Override
+	public void pagament() {
+		System.out.println("Pagament desde Paypal");
+		
+	}
+	
+}
