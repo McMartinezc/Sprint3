@@ -1,0 +1,18 @@
+package n2ex1;
+
+public class Passarella {
+	
+	private Botiga botiga;
+	private FormaPagament formaPagament;
+	
+	public Passarella (Botiga botiga, FormaPagament formaPagament) {
+		this.botiga = botiga;
+		this.formaPagament = formaPagament;
+	}
+	
+	//Metode per realitzar el CALLBACK
+	public void procesPagament() {
+		formaPagament.pagament();
+	}
+
+}
