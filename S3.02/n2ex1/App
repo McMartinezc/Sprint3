@@ -1,0 +1,47 @@
+package n2ex1;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		//Declaració de variables
+		FormaPagament formaPagament = null;
+		String opcio;
+		Botiga botiga = new Botiga ("Botiga de sabates");
+		
+		opcio = introInfo("Per pagar producte - Introdueixi: Targeta / PayPal / Compte:");
+		formaPagament =tipusPagament(formaPagament, opcio);
+		botiga.realitzarPagament(formaPagament);
+		System.out.println("Realitzada la seva compra a " +botiga);
+		
+	}
+	//Metode que selecciona tipus de pagament 
+	public static FormaPagament tipusPagament(FormaPagament formaPagament, String opcio) {
+		
+		switch(opcio) {
+		
+		case "Targeta":
+			formaPagament = new Targeta();
+			break;
+		case "PayPal":
+			formaPagament = new Paypal();
+			break;
+		case "Compte":
+			formaPagament = new CompteBancari();
+			break;
+	
+		}
+		
+		return formaPagament;
+	}
+	
+	// Metodes introduïr informació
+	static String introInfo(String missatge) {
+		Scanner input = new Scanner(System.in);
+		System.out.println(missatge);
+		return input.nextLine();// Retorna String
+	}
+
+}
