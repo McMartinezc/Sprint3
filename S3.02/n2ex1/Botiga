@@ -1,0 +1,23 @@
+package n2ex1;
+
+public class Botiga {
+	
+	private String nomBotiga;
+	
+	public Botiga(String nomBotiga) {
+		this.nomBotiga = nomBotiga;
+	}
+
+	public void realitzarPagament(FormaPagament formaPagament) {
+		
+		Passarella passarella = new Passarella(this, formaPagament); //Creem el objecte passarella per poder utilizar el CALLBACK
+		passarella.procesPagament(); //Cridem al metode que realitza el CALLBACK
+	}
+
+	@Override
+	public String toString() {
+		return nomBotiga;
+	}
+
+	
+}
