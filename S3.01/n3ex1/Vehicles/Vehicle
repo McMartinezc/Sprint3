@@ -1,0 +1,21 @@
+package n3ex1;
+
+public class Vehicle { // classe mare dels tipus de vehicles / Executara ordres determinades
+
+	public void arrencar() {
+		System.out.println("El " + this.getClass().getSimpleName() + " està arrencant ");
+	}
+
+	public void accelerar() {
+		System.out.println("El " + this.getClass().getSimpleName() + " està accelerant ");
+	}
+
+	public void frenar() {
+		System.out.println("El " + this.getClass().getSimpleName() + " està frenant ");
+	}
+
+	public String toString() {
+		return this.getClass().getSimpleName();
+	}
+
+}
