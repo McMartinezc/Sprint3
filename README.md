@@ -11,3 +11,7 @@ https://riptutorial.com/design-patterns/example/8933/command-pattern-example-in-
 https://www.tutorialspoint.com/design_pattern/command_pattern.htm#
 
 TASCA S3.02. PATTERNS 2 (OBSERVER, CALLBACK, DEPENDENCY INJECTION)
+
+https://www.baeldung.com/java-observer-pattern
+
+https://refactoring.guru/es/design-patterns/
