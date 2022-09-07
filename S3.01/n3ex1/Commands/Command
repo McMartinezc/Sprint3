@@ -1,0 +1,7 @@
+package n3ex1;
+
+public interface Command {
+
+	//Metode que s'executará a les classes per realitzar la tarea
+	public void ejecutar();
+}
