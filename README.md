@@ -23,4 +23,4 @@ https://www.baeldung.com/java-observer-pattern
 
 https://refactoring.guru/es/design-patterns/
 
-https://java-design-patterns.com/patterns/observer/
+https://java-design-patterns.com/patterns/
